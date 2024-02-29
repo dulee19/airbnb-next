@@ -17,10 +17,10 @@ interface iAppProps {
     pathName: string;
 }
 
-const { getCountryByValue } = useCountries()
-
 const ListingCard = ({ homeId, pathName, description, imagePath, location, price, userId, favoriteId, isInFavoriteList }: iAppProps) => {
+  const { getCountryByValue } = useCountries()
   const country = getCountryByValue(location);
+  
   return (
     <div className="flex flex-col">
       <div className="relative h-72">
