@@ -6,8 +6,8 @@ import React from 'react'
 const StructurePage = ({ params }: { params: { id: string } }) => {
   return (
     <>
-        <div className="w-3/5 mx-auto">
-            <h2 className='text-3xl font-semibold tracking-tight transition-colors'>Which of these best describe your Home!</h2>
+        <div className="md:w-3/5 w-full mx-auto">
+            <h2 className='text-3xl font-semibold tracking-tight transition-colors px-4'>Which of these best describe your Home!</h2>
         </div>
 
         <form action={createCategoryPage}>

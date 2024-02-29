@@ -44,7 +44,7 @@ const MyHomes = async () => {
     const data = await getData(user.id) 
 
   return (
-    <section className="container mx-auto lg:px-10 mt-10">
+    <section className="container mx-auto lg:px-10 px-4 mt-10">
         <h2 className="text-3xl font-semibold tracking-tight">Your Homes</h2>
 
       {data.length === 0 ? (

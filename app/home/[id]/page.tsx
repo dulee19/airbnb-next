@@ -54,9 +54,9 @@ const HomePage = async ({ params }: { params: { id: string } }) => {
     const user = await getUser()
 
   return (
-    <div className='w-[75%] mx-auto mt-10 mb-12'>
+    <div className='md:w-[75%] w-full mx-auto mt-10 mb-12 px-4'>
         <h1 className='font-medium text-2xl mb-5'>{data?.title}</h1>
-        <div className="relative h-[550px]">
+        <div className="relative md:h-[550px] h-72">
             <Image 
                 src={`https://ludjngqskkpsyapwtrcd.supabase.co/storage/v1/object/public/images/${data?.photo}`}
                 alt="Home"
@@ -65,8 +65,8 @@ const HomePage = async ({ params }: { params: { id: string } }) => {
             />
         </div>
 
-        <div className="flex justify-between gap-x-24 mt-8">
-            <div className="w-2/3">
+        <div className="flex justify-between gap-x-24 mt-8 md:flex-nowrap flex-wrap">
+            <div className="md:w-2/3 w-full px-4">
                 <h3 className='text-xl font-medium'>{country?.flag} {country?.label} / {country?.region}</h3>
                 <div className="flex gap-x-2 text-muted-foreground">
                     <p>{data?.guests} Guests</p> * 

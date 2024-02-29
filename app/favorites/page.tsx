@@ -39,7 +39,7 @@ const FavoritePage = async () => {
     console.log(data)
 
   return (
-    <section className='container mx-auto py-5 lg:px-10 mt-10'>
+    <section className='container mx-auto py-5 lg:px-10 px-4 mt-10'>
         <h2 className='text-3xl font-semibold'>Your Favorites</h2>
 
         {data.length === 0 ? (

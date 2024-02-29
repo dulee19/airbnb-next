@@ -10,13 +10,13 @@ import React from 'react'
 const DescriptionPage = ({ params }: { params: { id: string } }) => {
   return (
     <>
-    <div className='w-3/5 mx-auto'>
-      <h2 className='text-3xl font-semibold tracking-tight transition-colors'>Please describe your home as good as you can.</h2>
+    <div className='md:w-3/5 w-full mx-auto'>
+      <h2 className='text-3xl font-semibold tracking-tight transition-colors px-4'>Please describe your home as good as you can.</h2>
     </div>
 
     <form action={CreateDescription}>
       <input type="hidden" name="homeId" value={params.id} />
-      <div className="mx-auto w-3/5 mt-10 flex flex-col gap-y-5 mb-36">
+      <div className="mx-auto md:w-3/5 w-full px-4 mt-10 flex flex-col gap-y-5 mb-36">
         <div className="flex flex-col gap-y-2">
           <Label>Title</Label>
           <Input type="text" name="title" placeholder='Short and simple...' required />

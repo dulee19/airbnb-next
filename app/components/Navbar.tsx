@@ -10,7 +10,7 @@ import { SearchModal } from './Search'
 const Navbar = () => {
   return (
     <nav className="w-full border-b">
-        <div className="flex items-center justify-between mx-auto px-5 lg:px-10 py-5">
+        <div className="flex items-center justify-between md:flex-row flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5">
             <Link href="/">
                 <Image 
                     src={DesktopLogo} 

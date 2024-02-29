@@ -19,14 +19,14 @@ const AddressRoute = ({ params }: { params: { id: string } }) => {
 
   return (
     <>
-        <div className="w-3/5 mx-auto">
-            <h2 className="text-3xl font-semibold tracking-tight transition-colors mb-10">Where is your home located?</h2>
+        <div className="md:w-3/5 w-full mx-auto">
+            <h2 className="text-3xl font-semibold tracking-tight transition-colors mb-10 px-4">Where is your home located?</h2>
         </div>
 
         <form action={createLocation}>
             <input type="hidden" name="homeId" value={params.id} />
             <input type="hidden" name="countryValue" value={locationValue} />
-            <div className="w-3/5 mx-auto mb-36">
+            <div className="lg:w-3/5 w-full mx-auto mb-36">
                 <div className="mb-5">
                     <Select required onValueChange={(value) => setLocationValue(value)}>
                         <SelectTrigger className='w-full'>
